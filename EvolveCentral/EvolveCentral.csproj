@@ -1,0 +1,752 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D0C82865-C0ED-49CC-B320-347AB15D32AE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EvolveCentral</RootNamespace>
+    <AssemblyName>EvolveCentral</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="Telerik.Web.UI, Version=2013.2.717.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2013.2.717.40\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2013.2.717.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2013.2.717.40\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlPanel\Administration.Master.cs">
+      <DependentUpon>Administration.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administration.Master.designer.cs">
+      <DependentUpon>Administration.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorAccount.aspx.cs">
+      <DependentUpon>AdministratorAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorAccount.aspx.designer.cs">
+      <DependentUpon>AdministratorAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorAccountChangePassword.aspx.cs">
+      <DependentUpon>AdministratorAccountChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorAccountChangePassword.aspx.designer.cs">
+      <DependentUpon>AdministratorAccountChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorAccountCreate.aspx.cs">
+      <DependentUpon>AdministratorAccountCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorAccountCreate.aspx.designer.cs">
+      <DependentUpon>AdministratorAccountCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorAccountEdit.aspx.cs">
+      <DependentUpon>AdministratorAccountEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorAccountEdit.aspx.designer.cs">
+      <DependentUpon>AdministratorAccountEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorAccountView.aspx.cs">
+      <DependentUpon>AdministratorAccountView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorAccountView.aspx.designer.cs">
+      <DependentUpon>AdministratorAccountView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorPermission.aspx.cs">
+      <DependentUpon>AdministratorPermission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorPermission.aspx.designer.cs">
+      <DependentUpon>AdministratorPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorPermissionCreate.aspx.cs">
+      <DependentUpon>AdministratorPermissionCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorPermissionCreate.aspx.designer.cs">
+      <DependentUpon>AdministratorPermissionCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorPermissionEdit.aspx.cs">
+      <DependentUpon>AdministratorPermissionEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorPermissionEdit.aspx.designer.cs">
+      <DependentUpon>AdministratorPermissionEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorPermissionView.aspx.cs">
+      <DependentUpon>AdministratorPermissionView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorPermissionView.aspx.designer.cs">
+      <DependentUpon>AdministratorPermissionView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorRole.aspx.cs">
+      <DependentUpon>AdministratorRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorRole.aspx.designer.cs">
+      <DependentUpon>AdministratorRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorRoleCreate.aspx.cs">
+      <DependentUpon>AdministratorRoleCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorRoleCreate.aspx.designer.cs">
+      <DependentUpon>AdministratorRoleCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorRoleEdit.aspx.cs">
+      <DependentUpon>AdministratorRoleEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorRoleEdit.aspx.designer.cs">
+      <DependentUpon>AdministratorRoleEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorRoleView.aspx.cs">
+      <DependentUpon>AdministratorRoleView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\AdministratorRoleView.aspx.designer.cs">
+      <DependentUpon>AdministratorRoleView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\ClientList.aspx.cs">
+      <DependentUpon>ClientList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\ClientList.aspx.designer.cs">
+      <DependentUpon>ClientList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\ClientEdit.aspx.cs">
+      <DependentUpon>ClientEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\ClientEdit.aspx.designer.cs">
+      <DependentUpon>ClientEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\ControlPanel.Master.cs">
+      <DependentUpon>ControlPanel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\ControlPanel.Master.designer.cs">
+      <DependentUpon>ControlPanel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Company.aspx.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Company.aspx.designer.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CompanyCreate.aspx.cs">
+      <DependentUpon>CompanyCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CompanyCreate.aspx.designer.cs">
+      <DependentUpon>CompanyCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CompanyEdit.aspx.cs">
+      <DependentUpon>CompanyEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CompanyEdit.aspx.designer.cs">
+      <DependentUpon>CompanyEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CompanyView.aspx.cs">
+      <DependentUpon>CompanyView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CompanyView.aspx.designer.cs">
+      <DependentUpon>CompanyView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\ApplicationSettings.aspx.cs">
+      <DependentUpon>ApplicationSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\ApplicationSettings.aspx.designer.cs">
+      <DependentUpon>ApplicationSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\SyncLogCrmEvolutionDetailFullView.aspx.cs">
+      <DependentUpon>SyncLogCrmEvolutionDetailFullView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\SyncLogCrmEvolutionDetailFullView.aspx.designer.cs">
+      <DependentUpon>SyncLogCrmEvolutionDetailFullView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\SyncLogCrmEvolutionDetailFull.aspx.cs">
+      <DependentUpon>SyncLogCrmEvolutionDetailFull.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\SyncLogCrmEvolutionDetailFull.aspx.designer.cs">
+      <DependentUpon>SyncLogCrmEvolutionDetailFull.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\SyncLogCrmEvolutionDetail.aspx.cs">
+      <DependentUpon>SyncLogCrmEvolutionDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\SyncLogCrmEvolutionDetail.aspx.designer.cs">
+      <DependentUpon>SyncLogCrmEvolutionDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\SyncLogCrmEvolution.aspx.cs">
+      <DependentUpon>SyncLogCrmEvolution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\SyncLogCrmEvolution.aspx.designer.cs">
+      <DependentUpon>SyncLogCrmEvolution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceDetailView.aspx.cs">
+      <DependentUpon>CrmEvolutionServiceDetailView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceDetailView.aspx.designer.cs">
+      <DependentUpon>CrmEvolutionServiceDetailView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceDetailEdit.aspx.cs">
+      <DependentUpon>CrmEvolutionServiceDetailEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceDetailEdit.aspx.designer.cs">
+      <DependentUpon>CrmEvolutionServiceDetailEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceDetailCreate.aspx.cs">
+      <DependentUpon>CrmEvolutionServiceDetailCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceDetailCreate.aspx.designer.cs">
+      <DependentUpon>CrmEvolutionServiceDetailCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceDetail.aspx.cs">
+      <DependentUpon>CrmEvolutionServiceDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceDetail.aspx.designer.cs">
+      <DependentUpon>CrmEvolutionServiceDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceView.aspx.cs">
+      <DependentUpon>CrmEvolutionServiceView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceView.aspx.designer.cs">
+      <DependentUpon>CrmEvolutionServiceView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceEdit.aspx.cs">
+      <DependentUpon>CrmEvolutionServiceEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceEdit.aspx.designer.cs">
+      <DependentUpon>CrmEvolutionServiceEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceCreate.aspx.cs">
+      <DependentUpon>CrmEvolutionServiceCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceCreate.aspx.designer.cs">
+      <DependentUpon>CrmEvolutionServiceCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionService.aspx.cs">
+      <DependentUpon>CrmEvolutionService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionService.aspx.designer.cs">
+      <DependentUpon>CrmEvolutionService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceTemplateDetailView.aspx.cs">
+      <DependentUpon>CrmEvolutionServiceTemplateDetailView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceTemplateDetailView.aspx.designer.cs">
+      <DependentUpon>CrmEvolutionServiceTemplateDetailView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceTemplateDetailEdit.aspx.cs">
+      <DependentUpon>CrmEvolutionServiceTemplateDetailEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceTemplateDetailEdit.aspx.designer.cs">
+      <DependentUpon>CrmEvolutionServiceTemplateDetailEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceTemplateDetailCreate.aspx.cs">
+      <DependentUpon>CrmEvolutionServiceTemplateDetailCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceTemplateDetailCreate.aspx.designer.cs">
+      <DependentUpon>CrmEvolutionServiceTemplateDetailCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceTemplateDetail.aspx.cs">
+      <DependentUpon>CrmEvolutionServiceTemplateDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceTemplateDetail.aspx.designer.cs">
+      <DependentUpon>CrmEvolutionServiceTemplateDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceTemplateView.aspx.cs">
+      <DependentUpon>CrmEvolutionServiceTemplateView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceTemplateView.aspx.designer.cs">
+      <DependentUpon>CrmEvolutionServiceTemplateView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceTemplateEdit.aspx.cs">
+      <DependentUpon>CrmEvolutionServiceTemplateEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceTemplateEdit.aspx.designer.cs">
+      <DependentUpon>CrmEvolutionServiceTemplateEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceTemplateCreate.aspx.cs">
+      <DependentUpon>CrmEvolutionServiceTemplateCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceTemplateCreate.aspx.designer.cs">
+      <DependentUpon>CrmEvolutionServiceTemplateCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceTemplate.aspx.cs">
+      <DependentUpon>CrmEvolutionServiceTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\CrmEvolutionServiceTemplate.aspx.designer.cs">
+      <DependentUpon>CrmEvolutionServiceTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\DashBoard.aspx.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\DashBoard.aspx.designer.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\LogDetailList.aspx.cs">
+      <DependentUpon>LogDetailList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\LogDetailList.aspx.designer.cs">
+      <DependentUpon>LogDetailList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\MemberAccount.aspx.cs">
+      <DependentUpon>MemberAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\MemberAccount.aspx.designer.cs">
+      <DependentUpon>MemberAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\MemberAccountCreate.aspx.cs">
+      <DependentUpon>MemberAccountCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\MemberAccountCreate.aspx.designer.cs">
+      <DependentUpon>MemberAccountCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\MemberAccountEdit.aspx.cs">
+      <DependentUpon>MemberAccountEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\MemberAccountEdit.aspx.designer.cs">
+      <DependentUpon>MemberAccountEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\MemberAccountView.aspx.cs">
+      <DependentUpon>MemberAccountView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\MemberAccountView.aspx.designer.cs">
+      <DependentUpon>MemberAccountView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\ServiceTemplateDetailEdit.aspx.cs">
+      <DependentUpon>ServiceTemplateDetailEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\ServiceTemplateDetailEdit.aspx.designer.cs">
+      <DependentUpon>ServiceTemplateDetailEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\ServiceTemplateDetailList.aspx.cs">
+      <DependentUpon>ServiceTemplateDetailList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\ServiceTemplateDetailList.aspx.designer.cs">
+      <DependentUpon>ServiceTemplateDetailList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\ServiceTemplateEdit.aspx.cs">
+      <DependentUpon>ServiceTemplateEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\ServiceTemplateEdit.aspx.designer.cs">
+      <DependentUpon>ServiceTemplateEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\ServiceTemplateList.aspx.cs">
+      <DependentUpon>ServiceTemplateList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\ServiceTemplateList.aspx.designer.cs">
+      <DependentUpon>ServiceTemplateList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\LogDetailView.aspx.cs">
+      <DependentUpon>LogDetailView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\LogDetailView.aspx.designer.cs">
+      <DependentUpon>LogDetailView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\LogFullDetailList.aspx.cs">
+      <DependentUpon>LogFullDetailList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\LogFullDetailList.aspx.designer.cs">
+      <DependentUpon>LogFullDetailList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\LogList.aspx.cs">
+      <DependentUpon>LogList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\LogList.aspx.designer.cs">
+      <DependentUpon>LogList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\ServiceDetailEdit.aspx.cs">
+      <DependentUpon>ServiceDetailEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\ServiceDetailEdit.aspx.designer.cs">
+      <DependentUpon>ServiceDetailEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\ServiceDetailList.aspx.cs">
+      <DependentUpon>ServiceDetailList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\ServiceDetailList.aspx.designer.cs">
+      <DependentUpon>ServiceDetailList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\ServiceEdit.aspx.cs">
+      <DependentUpon>ServiceEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\ServiceEdit.aspx.designer.cs">
+      <DependentUpon>ServiceEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\ServiceList.aspx.cs">
+      <DependentUpon>ServiceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\ServiceList.aspx.designer.cs">
+      <DependentUpon>ServiceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ApplicationSettings.cs" />
+    <Compile Include="Helper\Constant.cs" />
+    <Compile Include="Helper\Current.cs" />
+    <Compile Include="Helper\Encryption.cs" />
+    <Compile Include="DAL\AdministratorAccountItem.cs">
+      <DependentUpon>modelEvolveCentral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\AdministratorPermission.cs" />
+    <Compile Include="DAL\AdministratorPermissionItem.cs">
+      <DependentUpon>modelEvolveCentral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\AdministratorRoleItem.cs">
+      <DependentUpon>modelEvolveCentral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ApplicationLog.cs" />
+    <Compile Include="DAL\ApplicationLogItem.cs">
+      <DependentUpon>modelEvolveCentral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ApplicationSettingsItem.cs">
+      <DependentUpon>modelEvolveCentral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Company.cs" />
+    <Compile Include="DAL\AdministratorAccount.cs" />
+    <Compile Include="DAL\CompanyItem.cs">
+      <DependentUpon>modelEvolveCentral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\MemberAccount.cs" />
+    <Compile Include="DAL\MemberAccountItem.cs">
+      <DependentUpon>modelEvolveCentral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ServiceCrmEvolutionDetailHistoryItem.cs">
+      <DependentUpon>modelEvolveCentral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ServiceCrmEvolutionDetailItem.cs">
+      <DependentUpon>modelEvolveCentral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ServiceCrmEvolutionItem.cs">
+      <DependentUpon>modelEvolveCentral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ServiceTemplateCrmEvolutionDetail.cs" />
+    <Compile Include="DAL\ServiceTemplateCrmEvolution.cs" />
+    <Compile Include="DAL\ServiceTemplateCrmEvolutionDetailItem.cs">
+      <DependentUpon>modelEvolveCentral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ServiceTemplateCrmEvolutionItem.cs">
+      <DependentUpon>modelEvolveCentral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ServiceTypeItem.cs">
+      <DependentUpon>modelEvolveCentral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\SyncLogCrmEvolutionDetail.cs" />
+    <Compile Include="DAL\SyncLogCrmEvolution.cs" />
+    <Compile Include="DAL\ServiceType.cs" />
+    <Compile Include="DAL\modelEvolveCentral.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>modelEvolveCentral.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\modelEvolveCentral.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>modelEvolveCentral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\modelEvolveCentral.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>modelEvolveCentral.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\AdministratorRole.cs" />
+    <Compile Include="DAL\ServiceCrmEvolution.cs" />
+    <Compile Include="DAL\ServiceCrmEvolutionDetail.cs" />
+    <Compile Include="DAL\SyncLogCrmEvolutionDetailItem.cs">
+      <DependentUpon>modelEvolveCentral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\SyncLogCrmEvolutionItem.cs">
+      <DependentUpon>modelEvolveCentral.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\Execute.cs" />
+    <Compile Include="Helper\Logger.cs" />
+    <Compile Include="Helper\Mailer.cs" />
+    <Compile Include="Helper\Validation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ControlPanel\AdministratorAccount.aspx" />
+    <Content Include="ControlPanel\AdministratorAccountChangePassword.aspx" />
+    <Content Include="ControlPanel\AdministratorAccountCreate.aspx" />
+    <Content Include="ControlPanel\AdministratorAccountEdit.aspx" />
+    <Content Include="ControlPanel\AdministratorAccountView.aspx" />
+    <Content Include="ControlPanel\AdministratorPermission.aspx" />
+    <Content Include="ControlPanel\AdministratorPermissionCreate.aspx" />
+    <Content Include="ControlPanel\AdministratorPermissionEdit.aspx" />
+    <Content Include="ControlPanel\AdministratorPermissionView.aspx" />
+    <Content Include="ControlPanel\AdministratorRole.aspx" />
+    <Content Include="ControlPanel\AdministratorRoleCreate.aspx" />
+    <Content Include="ControlPanel\AdministratorRoleEdit.aspx" />
+    <Content Include="ControlPanel\AdministratorRoleView.aspx" />
+    <Content Include="ControlPanel\ClientList.aspx" />
+    <Content Include="ControlPanel\ClientEdit.aspx" />
+    <Content Include="ControlPanel\Company.aspx" />
+    <Content Include="ControlPanel\CompanyCreate.aspx" />
+    <Content Include="ControlPanel\CompanyEdit.aspx" />
+    <Content Include="ControlPanel\CompanyView.aspx" />
+    <Content Include="ControlPanel\ApplicationSettings.aspx" />
+    <Content Include="ControlPanel\SyncLogCrmEvolutionDetailFullView.aspx" />
+    <Content Include="ControlPanel\SyncLogCrmEvolutionDetailFull.aspx" />
+    <Content Include="ControlPanel\SyncLogCrmEvolutionDetail.aspx" />
+    <Content Include="ControlPanel\SyncLogCrmEvolution.aspx" />
+    <Content Include="ControlPanel\CrmEvolutionServiceDetailView.aspx" />
+    <Content Include="ControlPanel\CrmEvolutionServiceDetailEdit.aspx" />
+    <Content Include="ControlPanel\CrmEvolutionServiceDetailCreate.aspx" />
+    <Content Include="ControlPanel\CrmEvolutionServiceDetail.aspx" />
+    <Content Include="ControlPanel\CrmEvolutionServiceView.aspx" />
+    <Content Include="ControlPanel\CrmEvolutionServiceEdit.aspx" />
+    <Content Include="ControlPanel\CrmEvolutionServiceCreate.aspx" />
+    <Content Include="ControlPanel\CrmEvolutionService.aspx" />
+    <Content Include="ControlPanel\CrmEvolutionServiceTemplateDetailView.aspx" />
+    <Content Include="ControlPanel\CrmEvolutionServiceTemplateDetailEdit.aspx" />
+    <Content Include="ControlPanel\CrmEvolutionServiceTemplateDetailCreate.aspx" />
+    <Content Include="ControlPanel\CrmEvolutionServiceTemplateDetail.aspx" />
+    <Content Include="ControlPanel\CrmEvolutionServiceTemplateView.aspx" />
+    <Content Include="ControlPanel\CrmEvolutionServiceTemplateEdit.aspx" />
+    <Content Include="ControlPanel\CrmEvolutionServiceTemplateCreate.aspx" />
+    <Content Include="ControlPanel\CrmEvolutionServiceTemplate.aspx" />
+    <Content Include="ControlPanel\DashBoard.aspx" />
+    <Content Include="ControlPanel\LogDetailList.aspx" />
+    <Content Include="ControlPanel\Login.aspx" />
+    <Content Include="ControlPanel\MemberAccount.aspx" />
+    <Content Include="ControlPanel\MemberAccountCreate.aspx" />
+    <Content Include="ControlPanel\MemberAccountEdit.aspx" />
+    <Content Include="ControlPanel\MemberAccountView.aspx" />
+    <Content Include="ControlPanel\ServiceTemplateDetailEdit.aspx" />
+    <Content Include="ControlPanel\ServiceTemplateDetailList.aspx" />
+    <Content Include="ControlPanel\ServiceTemplateEdit.aspx" />
+    <Content Include="ControlPanel\ServiceTemplateList.aspx" />
+    <Content Include="ControlPanel\LogDetailView.aspx" />
+    <Content Include="ControlPanel\LogFullDetailList.aspx" />
+    <Content Include="ControlPanel\LogList.aspx" />
+    <Content Include="ControlPanel\ServiceDetailEdit.aspx" />
+    <Content Include="ControlPanel\ServiceDetailList.aspx" />
+    <Content Include="ControlPanel\ServiceEdit.aspx" />
+    <Content Include="ControlPanel\ServiceList.aspx" />
+    <Content Include="Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\ChangePassword.png" />
+    <Content Include="Images\Logo_ControlPanel.png" />
+    <Content Include="Images\Dashboard_ApplicationConfiguration_24x24.png" />
+    <Content Include="Images\Details.png" />
+    <Content Include="Images\Execute.png" />
+    <Content Include="Images\Fieldset_Create_16x16.png" />
+    <Content Include="Images\Fieldset_Edit_16x16.png" />
+    <Content Include="Images\Fieldset_View_16x16.png" />
+    <Content Include="Images\Grid_Delete_16x16.png" />
+    <Content Include="Images\Grid_Edit_16x16.png" />
+    <Content Include="Images\Grid_View_16x16.png" />
+    <Content Include="Images\Logo_ControlPanel_Login.png" />
+    <Content Include="Images\Menu_Configuration_24x24.png" />
+    <Content Include="Images\Menu_Dashboard_24x24.png" />
+    <Content Include="Images\Menu_Dashboard_32x32.png" />
+    <Content Include="Images\Menu_LogManagement_24x24.png" />
+    <Content Include="Images\Menu_UserManagement_24x24.png" />
+    <Content Include="Images\MessageBox_Exclamation_32x32.png" />
+    <Content Include="Images\MessageBox_Question_32x32.png" />
+    <Content Include="Images\Redo.png" />
+    <Content Include="Images\Title_Dashboard_32x32.png" />
+    <Content Include="Images\Undo.png" />
+    <Content Include="Styles\ControlPanel\Dashboard.css" />
+    <Content Include="Styles\ControlPanel\FormCreate.css" />
+    <Content Include="Styles\ControlPanel\FormEdit.css" />
+    <Content Include="Styles\ControlPanel\FormList.css" />
+    <Content Include="Styles\ControlPanel\FormView.css" />
+    <Content Include="Styles\ControlPanel\Login.css" />
+    <Content Include="Styles\ControlPanel\MasterPage.css" />
+    <Content Include="Styles\ControlPanel\Messagebox.css" />
+    <Content Include="Styles\Public\MasterPage.css" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Default.Master" />
+    <EntityDeploy Include="DAL\modelEvolveCentral.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>modelEvolveCentral.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="DAL\modelEvolveCentral.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>modelEvolveCentral.edmx</DependentUpon>
+      <LastGenOutput>modelEvolveCentral.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DAL\modelEvolveCentral.edmx.diagram">
+      <DependentUpon>modelEvolveCentral.edmx</DependentUpon>
+    </Content>
+    <Content Include="DAL\modelEvolveCentral.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>modelEvolveCentral.edmx</DependentUpon>
+      <LastGenOutput>modelEvolveCentral.cs</LastGenOutput>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="ControlPanel\Administration.Master" />
+    <Content Include="ControlPanel\ControlPanel.Master" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Styles\Members\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49573</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:10466/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties UseAjaxifiedTemplates="True" UseJQuerySupport="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

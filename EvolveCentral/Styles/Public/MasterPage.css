@@ -1,0 +1,97 @@
+﻿html, body 
+{
+    margin: 0px;
+    padding: 0; 
+    background-color:#F7F7F7;
+
+}
+
+h1 
+{
+font-size:25px;
+color: darkslategray;
+font-family: 'Segoe UI';
+}
+h2 
+{
+font-size:20px;
+color: darkslategray;
+font-family: 'Segoe UI';
+}
+
+h3 
+{
+font-size:17px;
+color: darkslategray;
+font-family: 'Segoe UI';
+}
+.MasterHeader 
+{ 
+    height: 85px;
+    width: 100% !important;
+    font-family: 'Segoe UI';
+    background-color: #324355; 
+}
+
+.MasterHeader table
+{ 
+    width: 100% !important;
+}
+
+.MasterMenu 
+{
+    background-color: #3d4b5b !important;
+}
+
+.RadPanelBar_Silk a.rpLink, .RadPanelBar_Silk .rpTemplate 
+{
+    font-weight: lighter !important;
+    font-size: 14px !important;
+    background-color: transparent !important;
+}
+
+.RadPanelBar_WebBlue .rpOut
+{
+    vertical-align: middle !important; 
+    color: white !important;
+    font-weight: 200;
+}
+
+.RadPanelBar_WebBlue a.rpLink:hover, .RadPanelBar_WebBlue a.rpFocused, .RadPanelBar_WebBlue a.rpSelected, .RadPanelBar_WebBlue div.rpFocused, .RadPanelBar_WebBlue div.rpSelected
+{
+    color: black !important;
+}
+
+.RadPanelBar_WebBlue .rpItem
+{
+    background-color: #8DA0C7;
+}
+
+.LeftContentPanel 
+{
+    width: 200px !important; 
+    height: 534px; 
+    vertical-align: top;
+    background-color: #718CA2;
+}
+
+.LeftContentPanel a
+{
+    color: cornflowerblue;
+    font-size: 15px !important;
+    font-family: 'Segoe UI';
+    text-decoration: none;
+    font-weight: lighter !important;
+}
+
+.MasterFooter 
+{   
+    width: 100% !important;
+    font-size: 12px !important;
+    font-family: 'Segoe UI';
+    background-color: #324355;
+    height: 21px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}

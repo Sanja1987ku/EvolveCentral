@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b6de6a001a0947f587724043340a2e91" Name="Diagram1">
+        <EntityTypeShape EntityType="modelEvolveCentral.AdministratorAccountItem" Width="1.5" PointX="3.6866104675860196" PointY="8.0614706911432883" />
+        <EntityTypeShape EntityType="modelEvolveCentral.AdministratorPermissionItem" Width="1.5" PointX="11.064170831378629" PointY="29.785411073726326" />
+        <EntityTypeShape EntityType="modelEvolveCentral.AdministratorRoleItem" Width="1.5" PointX="2.7306091034461786" PointY="31.466183364142751" />
+        <EntityTypeShape EntityType="modelEvolveCentral.ApplicationLogItem" Width="1.5" PointX="10.192546566106634" PointY="9.4457169219133057" />
+        <EntityTypeShape EntityType="modelEvolveCentral.ApplicationSettingsItem" Width="1.5" PointX="8.2480060105435573" PointY="17.584136807166104" />
+        <EntityTypeShape EntityType="modelEvolveCentral.CompanyItem" Width="1.5" PointX="3.3234766048022903" PointY="2.2931551645943684" />
+        <EntityTypeShape EntityType="modelEvolveCentral.MemberAccountItem" Width="1.5" PointX="3.23242648282667" PointY="11.017349710230413" />
+        <EntityTypeShape EntityType="modelEvolveCentral.ServiceCrmEvolutionDetailHistoryItem" Width="1.5" PointX="0.5887515454500688" PointY="19.561740556527738" />
+        <EntityTypeShape EntityType="modelEvolveCentral.ServiceCrmEvolutionDetailItem" Width="1.5" PointX="11.161343659815072" PointY="12.654987564615434" />
+        <EntityTypeShape EntityType="modelEvolveCentral.ServiceCrmEvolutionItem" Width="1.5" PointX="5.7270600394006168" PointY="29.487687795184407" />
+        <EntityTypeShape EntityType="modelEvolveCentral.ServiceTemplateCrmEvolutionDetailItem" Width="1.5" PointX="1.8771253721216343" PointY="20.455678532112241" />
+        <EntityTypeShape EntityType="modelEvolveCentral.ServiceTemplateCrmEvolutionItem" Width="1.5" PointX="7.5130862554130546" PointY="10.455751930575703" />
+        <EntityTypeShape EntityType="modelEvolveCentral.ServiceTypeItem" Width="1.5" PointX="2.9847042965631485" PointY="9.1633740706198736" />
+        <EntityTypeShape EntityType="modelEvolveCentral.SyncLogCrmEvolutionDetailItem" Width="1.5" PointX="1.2034262890012126" PointY="10.074746196193036" />
+        <EntityTypeShape EntityType="modelEvolveCentral.SyncLogCrmEvolutionItem" Width="1.5" PointX="5.60482154861317" PointY="14.899306050920536" />
+        <AssociationConnector Association="modelEvolveCentral.FK_AdministratorAccountItem_AdministratorRoleItem" />
+        <AssociationConnector Association="modelEvolveCentral.FK_ExceptionLogItem_AdministratorAccountItem1" />
+        <AssociationConnector Association="modelEvolveCentral.FK_MemberAccountItem_CompanyItem" />
+        <AssociationConnector Association="modelEvolveCentral.FK_ServiceCrmEvolutionItem_CompanyItem" />
+        <AssociationConnector Association="modelEvolveCentral.FK_ServiceCrmEvolutionDetailHistoryItem_ServiceCrmEvolutionDetailItem" />
+        <AssociationConnector Association="modelEvolveCentral.FK_ServiceCrmEvolutionDetailHistoryItem_ServiceCrmEvolutionItem" />
+        <AssociationConnector Association="modelEvolveCentral.FK_ServiceCrmEvolutionDetailItem_ServiceCrmEvolutionItem" />
+        <AssociationConnector Association="modelEvolveCentral.FK_ServiceCrmEvolutionItem_ServiceTemplateCrmEvolutionItem" />
+        <AssociationConnector Association="modelEvolveCentral.FK_ServiceTemplateCrmEvolutionDetailItem_ServiceTemplateCrmEvolutionItem" />
+        <AssociationConnector Association="modelEvolveCentral.FK_ServiceTemplateItem_ServiceTypeItem" />
+        <AssociationConnector Association="modelEvolveCentral.FK_LogDetailItem_LogItem" />
+        <AssociationConnector Association="modelEvolveCentral.AdministratorRolePermissionItem" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

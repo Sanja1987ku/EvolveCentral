@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ControlPanel.master.cs" Inherits="EvolveCentral.ControlPanel.ControlPanel" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+   
+     <head runat="server">
+        <title>Evolve Central</title>
+        <link href="../Styles/ControlPanel/MasterPage.css" rel="stylesheet" />
+
+    </head>
+
+    <body>
+       
+         <form id="frm" runat="server">
+
+            <telerik:RadScriptManager runat="Server" ID="rsm" />
+
+            <div class="MasterHeader">
+                <table>
+                    <tr>
+                        <td>
+                            <asp:Image runat="server" ID="imgLogo" AlternateText="Logo.png" ImageUrl="~/Images/Logo_ControlPanel.png" Width="170px" height="65px" />
+                        </td>
+                        <td style="text-align:right; vertical-align:bottom;">
+                            <asp:Label runat="server" ID="lblCurrentUser" Text="Welcome, [CurrentUserName]! "  ForeColor="WhiteSmoke" Font-Size="12px"/> &nbsp;
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+
+            <table style="width:100%; margin:0px !important; padding:0px !important; border-collapse: collapse;">
+                <tr>
+                    <td class="LeftContentPanel">
+
+                        <telerik:RadPanelBar runat="server" ID="rpbLeftSideMenu" CssClass="MasterMenu">
+                            <Items>
+                                <telerik:RadPanelItem runat="server" Text="DASHBOARD" ImageUrl="~/Images/Menu_Dashboard_24x24.png" NavigateUrl="~/ControlPanel/DashBoard.aspx" >
+                                </telerik:RadPanelItem>
+                                <%--  MENU - User Management--%>
+                                <telerik:RadPanelItem runat="server" Text="USER MANAGEMENT" ImageUrl="~/Images/Menu_UserManagement_24x24.png">
+                                    <Items>
+                                        <telerik:RadPanelItem Text="Administrator Accounts" runat="server" NavigateUrl="AdministratorAccount.aspx" />
+                                        <telerik:RadPanelItem Text="Administrator Roles" runat="server" NavigateUrl="AdministratorRole.aspx" />
+                                        <telerik:RadPanelItem Text="Administrator Permissions" runat="server" NavigateUrl="AdministratorPermission.aspx" />
+                                        <telerik:RadPanelItem Text="<hr />" runat="server" IsSeparator="true" />
+                                        <telerik:RadPanelItem Text="Member Accounts" runat="server" NavigateUrl="MemberAccount.aspx" />
+                                         <telerik:RadPanelItem Text="Companies" runat="server" NavigateUrl="Company.aspx" />
+                                    
+                                    </Items>
+                                </telerik:RadPanelItem>
+
+                                <%--  MENU - Contact Management--%>
+                                <telerik:RadPanelItem runat="server" Text="SERVICES" ImageUrl="~/Images/Menu_ContactManagement_24x24.png">
+                                    <Items>
+                                        <telerik:RadPanelItem Text="CRM & Evolution Service Templates" runat="server" NavigateUrl="CrmEvolutionServiceTemplate.aspx" />
+                                        <telerik:RadPanelItem Text="CRM & Evolution Services" runat="server" NavigateUrl="CrmEvolutionService.aspx" />
+                                        <telerik:RadPanelItem Text="<hr />" runat="server" IsSeparator="true" />
+                                           <telerik:RadPanelItem Text="CRM & Instant Customer Service Templates" runat="server" NavigateUrl="ServiceTemplateCrmInstantCustomer.aspx" />
+                                        <telerik:RadPanelItem Text="CRM & Instant Customer Services" runat="server" NavigateUrl="ServiceCrmInstantCustomer.aspx" />
+                                        <telerik:RadPanelItem Text="<hr />" runat="server" IsSeparator="true" />
+                                    
+                                             </Items>
+                                </telerik:RadPanelItem>
+
+                               
+                             
+                                <telerik:RadPanelItem runat="server" Text="LOG MANAGEMENT" ImageUrl="~/Images/Menu_LogManagement_24x24.png">
+                                    <Items>
+                                        <telerik:RadPanelItem Text="CRM & Evolution Sync Log" runat="server" NavigateUrl="SyncLogCrmEvolution.aspx" />
+                                          <telerik:RadPanelItem Text="<hr />" runat="server" IsSeparator="true" />
+                                     
+   <telerik:RadPanelItem Text="Application Log" runat="server" NavigateUrl="ApplicationLog.aspx" />
+                                     
+                                    </Items>
+                                </telerik:RadPanelItem>
+
+                                <telerik:RadPanelItem runat="server" Text="CONFIGURATION" ImageUrl="~/Images/Menu_Configuration_24x24.png">
+                                    <Items>
+
+                                          <telerik:RadPanelItem Text="Settings" runat="server" NavigateUrl="ApplicationSettings.aspx" />
+
+                                    </Items>
+                                </telerik:RadPanelItem>
+                                <telerik:RadPanelItem runat="server" Text="LOG OFF" ImageUrl="~/Images/Menu_Dashboard_24x24.png" NavigateUrl="~/ControlPanel/Login.aspx" >
+                                </telerik:RadPanelItem>
+                            </Items>
+
+                        </telerik:RadPanelBar>
+                    </td>
+
+                    <td style="vertical-align:top; padding:10px 10px 10px 10px; ">
+
+                        <asp:ContentPlaceHolder ID="cphContent" runat="server">
+
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+            <div id="divFooter" class="MasterFooter">
+                Copyright: Evolve Central 2014
+            
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+﻿.MessageBox
+{
+
+}
+
+.MessageBox table
+{
+padding: 5px 5px 5px 5px;
+border-spacing: 5px 5px;
+width:100%;
+
+}
+
+.MessageBox table tr td
+{
+    vertical-align:middle !important;
+font-family: 'Segoe UI';
+font-size:14px;
+color:white;
+height:45px !important;  
+}
+
+.MessageBox h1
+{
+   font-family: 'Segoe UI';
+font-size:17px !important;
+color:white;
+font-weight:500;
+font-family:'Segoe UI';
+
+}
+
+   .RadWindow_WebBlue .rwCorner .rwTopLeft,  
+.RadWindow_WebBlue .rwTitlebar,  
+.RadWindow_WebBlue .rwCorner .rwTopRight,  
+.RadWindow_WebBlue .rwIcon, 
+.RadWindow_WebBlue table .rwTopLeft,  
+.RadWindow_WebBlue table .rwTopRight,  
+.RadWindow_WebBlue table .rwFooterLeft,  
+.RadWindow_WebBlue table .rwFooterRight,  
+.RadWindow_WebBlue table .rwFooterCenter,  
+.RadWindow_WebBlue table .rwBodyLeft,  
+.RadWindow_WebBlue table .rwBodyRight,  
+.RadWindow_WebBlue table .rwTitlebar,  
+.RadWindow_WebBlue table .rwTopResize, 
+.RadWindow_WebBlue table .rwStatusbar, 
+.RadWindow_WebBlue table .rwStatusbar .rwLoading 
+    {    
+        display: none !important;   
+    }
+

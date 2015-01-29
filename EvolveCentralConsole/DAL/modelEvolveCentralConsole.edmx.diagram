@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fdfd2d86511f427fb1e7f647f5c0576c" Name="Diagram1">
+        <EntityTypeShape EntityType="modelEvolveCentralConsole.AdministratorAccountItem" Width="1.5" PointX="10.506491224517344" PointY="15.406609825513609" />
+        <EntityTypeShape EntityType="modelEvolveCentralConsole.AdministratorPermissionItem" Width="1.5" PointX="8.2150632702815649" PointY="12.840480527300612" />
+        <EntityTypeShape EntityType="modelEvolveCentralConsole.AdministratorRoleItem" Width="1.5" PointX="4.4770190308229152" PointY="0.1849160791304503" />
+        <EntityTypeShape EntityType="modelEvolveCentralConsole.ApplicationLogItem" Width="1.5" PointX="9.155599821897038" PointY="26.564519715758284" />
+        <EntityTypeShape EntityType="modelEvolveCentralConsole.ApplicationSettingsItem" Width="1.5" PointX="2.8495212918378048" PointY="7.6910804098896124" />
+        <EntityTypeShape EntityType="modelEvolveCentralConsole.CompanyItem" Width="1.5" PointX="5.0817709477067785" PointY="22.291013951548848" />
+        <EntityTypeShape EntityType="modelEvolveCentralConsole.MemberAccountItem" Width="1.5" PointX="7.7076008355746053" PointY="12.401160543971304" />
+        <EntityTypeShape EntityType="modelEvolveCentralConsole.ServiceCrmEvolutionDetailHistoryItem" Width="1.5" PointX="8.307175669962156" PointY="1.4451374120289169" />
+        <EntityTypeShape EntityType="modelEvolveCentralConsole.ServiceCrmEvolutionDetailItem" Width="1.5" PointX="9.8538136807520935" PointY="13.266909933307632" />
+        <EntityTypeShape EntityType="modelEvolveCentralConsole.ServiceCrmEvolutionItem" Width="1.5" PointX="9.8764603034949214" PointY="22.519967581387593" />
+        <EntityTypeShape EntityType="modelEvolveCentralConsole.ServiceTemplateCrmEvolutionDetailItem" Width="1.5" PointX="9.7302126277844483" PointY="25.711733472399288" />
+        <EntityTypeShape EntityType="modelEvolveCentralConsole.ServiceTemplateCrmEvolutionItem" Width="1.5" PointX="7.3481747579519521" PointY="23.207358266789168" />
+        <EntityTypeShape EntityType="modelEvolveCentralConsole.ServiceTypeItem" Width="1.5" PointX="9.9568286565862731" PointY="4.0892800558774169" />
+        <EntityTypeShape EntityType="modelEvolveCentralConsole.SyncLogCrmEvolutionDetailItem" Width="1.5" PointX="8.6595053824873212" PointY="20.36480053717494" />
+        <EntityTypeShape EntityType="modelEvolveCentralConsole.SyncLogCrmEvolutionItem" Width="1.5" PointX="1.213952612697125" PointY="7.0009701284584454" />
+        <AssociationConnector Association="modelEvolveCentralConsole.FK_AdministratorAccountItem_AdministratorRoleItem" />
+        <AssociationConnector Association="modelEvolveCentralConsole.FK_ExceptionLogItem_AdministratorAccountItem1" />
+        <AssociationConnector Association="modelEvolveCentralConsole.FK_MemberAccountItem_CompanyItem" />
+        <AssociationConnector Association="modelEvolveCentralConsole.FK_ServiceCrmEvolutionItem_CompanyItem" />
+        <AssociationConnector Association="modelEvolveCentralConsole.FK_ServiceCrmEvolutionDetailHistoryItem_ServiceCrmEvolutionDetailItem" />
+        <AssociationConnector Association="modelEvolveCentralConsole.FK_ServiceCrmEvolutionDetailHistoryItem_ServiceCrmEvolutionItem" />
+        <AssociationConnector Association="modelEvolveCentralConsole.FK_ServiceCrmEvolutionDetailItem_ServiceCrmEvolutionItem" />
+        <AssociationConnector Association="modelEvolveCentralConsole.FK_ServiceCrmEvolutionItem_ServiceTemplateCrmEvolutionItem" />
+        <AssociationConnector Association="modelEvolveCentralConsole.FK_ServiceTemplateCrmEvolutionDetailItem_ServiceTemplateCrmEvolutionItem" />
+        <AssociationConnector Association="modelEvolveCentralConsole.FK_ServiceTemplateItem_ServiceTypeItem" />
+        <AssociationConnector Association="modelEvolveCentralConsole.FK_LogDetailItem_LogItem" />
+        <AssociationConnector Association="modelEvolveCentralConsole.AdministratorRolePermissionItem" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

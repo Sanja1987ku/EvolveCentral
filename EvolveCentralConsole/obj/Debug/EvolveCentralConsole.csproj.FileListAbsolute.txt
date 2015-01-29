@@ -1,0 +1,8 @@
+D:\Jobs\Elance\John North\Source\Evolve Central\Source\EvolveCentral\EvolveCentralConsole\bin\Debug\EvolveCentralConsole.exe.config
+D:\Jobs\Elance\John North\Source\Evolve Central\Source\EvolveCentral\EvolveCentralConsole\bin\Debug\EvolveCentralConsole.exe
+D:\Jobs\Elance\John North\Source\Evolve Central\Source\EvolveCentral\EvolveCentralConsole\bin\Debug\EvolveCentralConsole.pdb
+D:\Jobs\Elance\John North\Source\Evolve Central\Source\EvolveCentral\EvolveCentralConsole\bin\Debug\EntityFramework.dll
+D:\Jobs\Elance\John North\Source\Evolve Central\Source\EvolveCentral\EvolveCentralConsole\bin\Debug\EntityFramework.xml
+D:\Jobs\Elance\John North\Source\Evolve Central\Source\EvolveCentral\EvolveCentralConsole\obj\Debug\EvolveCentralConsole.exe
+D:\Jobs\Elance\John North\Source\Evolve Central\Source\EvolveCentral\EvolveCentralConsole\obj\Debug\EvolveCentralConsole.pdb
+D:\Jobs\Elance\John North\Source\Evolve Central\Source\EvolveCentral\EvolveCentralConsole\obj\Debug\EvolveCentralConsole.csprojResolveAssemblyReference.cache

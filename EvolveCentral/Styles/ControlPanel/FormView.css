@@ -1,0 +1,37 @@
+﻿
+.ContentTitle {
+
+  font-family: 'Segoe UI';
+  font-size: 20px; 
+  font-weight: lighter;
+  width:100%;
+  vertical-align:middle;
+      color:black;
+}
+
+.ContentTitle table tr td
+{
+
+ 
+  vertical-align:middle;
+
+}
+
+.Content 
+{
+    font-family: 'Segoe UI';
+  font-size: 14px; 
+
+}
+
+.Content table
+{
+  
+ border-spacing: 7px;
+}
+.Content legend
+{
+  
+font-size: 16px; 
+}
+

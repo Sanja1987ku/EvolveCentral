@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="modelEvolveCentralConsole" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="entitiesEvolveCentralConsole" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AdministratorAccountItems" EntityType="modelEvolveCentralConsole.AdministratorAccountItem" />
+    <EntitySet Name="AdministratorPermissionItems" EntityType="modelEvolveCentralConsole.AdministratorPermissionItem" />
+    <EntitySet Name="AdministratorRoleItems" EntityType="modelEvolveCentralConsole.AdministratorRoleItem" />
+    <EntitySet Name="ApplicationLogItems" EntityType="modelEvolveCentralConsole.ApplicationLogItem" />
+    <EntitySet Name="ApplicationSettingsItems" EntityType="modelEvolveCentralConsole.ApplicationSettingsItem" />
+    <EntitySet Name="CompanyItems" EntityType="modelEvolveCentralConsole.CompanyItem" />
+    <EntitySet Name="MemberAccountItems" EntityType="modelEvolveCentralConsole.MemberAccountItem" />
+    <EntitySet Name="ServiceCrmEvolutionDetailHistoryItems" EntityType="modelEvolveCentralConsole.ServiceCrmEvolutionDetailHistoryItem" />
+    <EntitySet Name="ServiceCrmEvolutionDetailItems" EntityType="modelEvolveCentralConsole.ServiceCrmEvolutionDetailItem" />
+    <EntitySet Name="ServiceCrmEvolutionItems" EntityType="modelEvolveCentralConsole.ServiceCrmEvolutionItem" />
+    <EntitySet Name="ServiceTemplateCrmEvolutionDetailItems" EntityType="modelEvolveCentralConsole.ServiceTemplateCrmEvolutionDetailItem" />
+    <EntitySet Name="ServiceTemplateCrmEvolutionItems" EntityType="modelEvolveCentralConsole.ServiceTemplateCrmEvolutionItem" />
+    <EntitySet Name="ServiceTypeItems" EntityType="modelEvolveCentralConsole.ServiceTypeItem" />
+    <EntitySet Name="SyncLogCrmEvolutionDetailItems" EntityType="modelEvolveCentralConsole.SyncLogCrmEvolutionDetailItem" />
+    <EntitySet Name="SyncLogCrmEvolutionItems" EntityType="modelEvolveCentralConsole.SyncLogCrmEvolutionItem" />
+    <AssociationSet Name="FK_AdministratorAccountItem_AdministratorRoleItem" Association="modelEvolveCentralConsole.FK_AdministratorAccountItem_AdministratorRoleItem">
+      <End Role="AdministratorRoleItem" EntitySet="AdministratorRoleItems" />
+      <End Role="AdministratorAccountItem" EntitySet="AdministratorAccountItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ExceptionLogItem_AdministratorAccountItem1" Association="modelEvolveCentralConsole.FK_ExceptionLogItem_AdministratorAccountItem1">
+      <End Role="AdministratorAccountItem" EntitySet="AdministratorAccountItems" />
+      <End Role="ApplicationLogItem" EntitySet="ApplicationLogItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MemberAccountItem_CompanyItem" Association="modelEvolveCentralConsole.FK_MemberAccountItem_CompanyItem">
+      <End Role="CompanyItem" EntitySet="CompanyItems" />
+      <End Role="MemberAccountItem" EntitySet="MemberAccountItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServiceCrmEvolutionItem_CompanyItem" Association="modelEvolveCentralConsole.FK_ServiceCrmEvolutionItem_CompanyItem">
+      <End Role="CompanyItem" EntitySet="CompanyItems" />
+      <End Role="ServiceCrmEvolutionItem" EntitySet="ServiceCrmEvolutionItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServiceCrmEvolutionDetailHistoryItem_ServiceCrmEvolutionDetailItem" Association="modelEvolveCentralConsole.FK_ServiceCrmEvolutionDetailHistoryItem_ServiceCrmEvolutionDetailItem">
+      <End Role="ServiceCrmEvolutionDetailItem" EntitySet="ServiceCrmEvolutionDetailItems" />
+      <End Role="ServiceCrmEvolutionDetailHistoryItem" EntitySet="ServiceCrmEvolutionDetailHistoryItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServiceCrmEvolutionDetailHistoryItem_ServiceCrmEvolutionItem" Association="modelEvolveCentralConsole.FK_ServiceCrmEvolutionDetailHistoryItem_ServiceCrmEvolutionItem">
+      <End Role="ServiceCrmEvolutionItem" EntitySet="ServiceCrmEvolutionItems" />
+      <End Role="ServiceCrmEvolutionDetailHistoryItem" EntitySet="ServiceCrmEvolutionDetailHistoryItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServiceCrmEvolutionDetailItem_ServiceCrmEvolutionItem" Association="modelEvolveCentralConsole.FK_ServiceCrmEvolutionDetailItem_ServiceCrmEvolutionItem">
+      <End Role="ServiceCrmEvolutionItem" EntitySet="ServiceCrmEvolutionItems" />
+      <End Role="ServiceCrmEvolutionDetailItem" EntitySet="ServiceCrmEvolutionDetailItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServiceCrmEvolutionItem_ServiceTemplateCrmEvolutionItem" Association="modelEvolveCentralConsole.FK_ServiceCrmEvolutionItem_ServiceTemplateCrmEvolutionItem">
+      <End Role="ServiceTemplateCrmEvolutionItem" EntitySet="ServiceTemplateCrmEvolutionItems" />
+      <End Role="ServiceCrmEvolutionItem" EntitySet="ServiceCrmEvolutionItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServiceTemplateCrmEvolutionDetailItem_ServiceTemplateCrmEvolutionItem" Association="modelEvolveCentralConsole.FK_ServiceTemplateCrmEvolutionDetailItem_ServiceTemplateCrmEvolutionItem">
+      <End Role="ServiceTemplateCrmEvolutionItem" EntitySet="ServiceTemplateCrmEvolutionItems" />
+      <End Role="ServiceTemplateCrmEvolutionDetailItem" EntitySet="ServiceTemplateCrmEvolutionDetailItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServiceTemplateItem_ServiceTypeItem" Association="modelEvolveCentralConsole.FK_ServiceTemplateItem_ServiceTypeItem">
+      <End Role="ServiceTypeItem" EntitySet="ServiceTypeItems" />
+      <End Role="ServiceTemplateCrmEvolutionItem" EntitySet="ServiceTemplateCrmEvolutionItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LogDetailItem_LogItem" Association="modelEvolveCentralConsole.FK_LogDetailItem_LogItem">
+      <End Role="SyncLogCrmEvolutionItem" EntitySet="SyncLogCrmEvolutionItems" />
+      <End Role="SyncLogCrmEvolutionDetailItem" EntitySet="SyncLogCrmEvolutionDetailItems" />
+    </AssociationSet>
+    <AssociationSet Name="AdministratorRolePermissionItem" Association="modelEvolveCentralConsole.AdministratorRolePermissionItem">
+      <End Role="AdministratorPermissionItem" EntitySet="AdministratorPermissionItems" />
+      <End Role="AdministratorRoleItem" EntitySet="AdministratorRoleItems" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AdministratorAccountItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="AdministratorRoleId" Nullable="false" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeletable" Nullable="false" />
+    <Property Type="DateTime" Name="LastLogonOn" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="ModifiedBy" />
+    <Property Type="DateTime" Name="ModifiedOn" Nullable="false" Precision="3" />
+    <NavigationProperty Name="AdministratorRoleItem" Relationship="modelEvolveCentralConsole.FK_AdministratorAccountItem_AdministratorRoleItem" FromRole="AdministratorAccountItem" ToRole="AdministratorRoleItem" />
+    <NavigationProperty Name="ApplicationLogItems" Relationship="modelEvolveCentralConsole.FK_ExceptionLogItem_AdministratorAccountItem1" FromRole="AdministratorAccountItem" ToRole="ApplicationLogItem" />
+  </EntityType>
+  <EntityType Name="AdministratorPermissionItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ParentId" />
+    <Property Type="String" Name="Code" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsSelectable" />
+    <NavigationProperty Name="AdministratorRoleItems" Relationship="modelEvolveCentralConsole.AdministratorRolePermissionItem" FromRole="AdministratorPermissionItem" ToRole="AdministratorRoleItem" />
+  </EntityType>
+  <EntityType Name="AdministratorRoleItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Code" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsDeletable" Nullable="false" />
+    <NavigationProperty Name="AdministratorAccountItems" Relationship="modelEvolveCentralConsole.FK_AdministratorAccountItem_AdministratorRoleItem" FromRole="AdministratorRoleItem" ToRole="AdministratorAccountItem" />
+    <NavigationProperty Name="AdministratorPermissionItems" Relationship="modelEvolveCentralConsole.AdministratorRolePermissionItem" FromRole="AdministratorRoleItem" ToRole="AdministratorPermissionItem" />
+  </EntityType>
+  <EntityType Name="ApplicationLogItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="3" />
+    <Property Type="String" Name="Source" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Message" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="MemberAccountId" />
+    <Property Type="Int32" Name="AdministratorAccountId" />
+    <NavigationProperty Name="AdministratorAccountItem" Relationship="modelEvolveCentralConsole.FK_ExceptionLogItem_AdministratorAccountItem1" FromRole="ApplicationLogItem" ToRole="AdministratorAccountItem" />
+  </EntityType>
+  <EntityType Name="ApplicationSettingsItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Group" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Code" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Value" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CompanyItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Code" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Contact" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Active" Nullable="false" />
+    <NavigationProperty Name="MemberAccountItems" Relationship="modelEvolveCentralConsole.FK_MemberAccountItem_CompanyItem" FromRole="CompanyItem" ToRole="MemberAccountItem" />
+    <NavigationProperty Name="ServiceCrmEvolutionItems" Relationship="modelEvolveCentralConsole.FK_ServiceCrmEvolutionItem_CompanyItem" FromRole="CompanyItem" ToRole="ServiceCrmEvolutionItem" />
+  </EntityType>
+  <EntityType Name="MemberAccountItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CompanyId" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Gender" Nullable="false" />
+    <Property Type="DateTime" Name="RegisteredOn" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="LastLogonOn" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <NavigationProperty Name="CompanyItem" Relationship="modelEvolveCentralConsole.FK_MemberAccountItem_CompanyItem" FromRole="MemberAccountItem" ToRole="CompanyItem" />
+  </EntityType>
+  <EntityType Name="ServiceCrmEvolutionDetailHistoryItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ServiceCrmEvolutionDetailId" Nullable="false" />
+    <Property Type="String" Name="Code" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ServiceCrmEvolutionId" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SourceTable" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DestinationTable" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CommandType" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Command" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Sequence" />
+    <Property Type="Boolean" Name="IsUnique" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Int32" Name="LastModifiedMemberAccountId" />
+    <Property Type="Int32" Name="LastModifiedAdministratorAccountId" />
+    <Property Type="DateTime" Name="ModifiedOn" Precision="3" />
+    <NavigationProperty Name="ServiceCrmEvolutionDetailItem" Relationship="modelEvolveCentralConsole.FK_ServiceCrmEvolutionDetailHistoryItem_ServiceCrmEvolutionDetailItem" FromRole="ServiceCrmEvolutionDetailHistoryItem" ToRole="ServiceCrmEvolutionDetailItem" />
+    <NavigationProperty Name="ServiceCrmEvolutionItem" Relationship="modelEvolveCentralConsole.FK_ServiceCrmEvolutionDetailHistoryItem_ServiceCrmEvolutionItem" FromRole="ServiceCrmEvolutionDetailHistoryItem" ToRole="ServiceCrmEvolutionItem" />
+  </EntityType>
+  <EntityType Name="ServiceCrmEvolutionDetailItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Code" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ServiceCrmEvolutionId" />
+    <Property Type="String" Name="Name" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SourceTable" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DestinationTable" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CommandType" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Command" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Sequence" />
+    <Property Type="Boolean" Name="IsUnique" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Int32" Name="LastModifiedMemberAccountId" />
+    <Property Type="Int32" Name="LastModifiedAdministratorAccountId" />
+    <Property Type="DateTime" Name="ModifiedOn" Precision="3" />
+    <NavigationProperty Name="ServiceCrmEvolutionDetailHistoryItems" Relationship="modelEvolveCentralConsole.FK_ServiceCrmEvolutionDetailHistoryItem_ServiceCrmEvolutionDetailItem" FromRole="ServiceCrmEvolutionDetailItem" ToRole="ServiceCrmEvolutionDetailHistoryItem" />
+    <NavigationProperty Name="ServiceCrmEvolutionItem" Relationship="modelEvolveCentralConsole.FK_ServiceCrmEvolutionDetailItem_ServiceCrmEvolutionItem" FromRole="ServiceCrmEvolutionDetailItem" ToRole="ServiceCrmEvolutionItem" />
+  </EntityType>
+  <EntityType Name="ServiceCrmEvolutionItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ServiceTemplateCrmEvolutionId" />
+    <Property Type="String" Name="Code" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CompanyId" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Connection_DatabaseName" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Connection_DatabaseServer" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Connection_DatabaseUserName" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Connection_DatabasePassword" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DatabaseName_Source" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DatabaseName_Destination" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="LastSyncDate" Precision="3" />
+    <Property Type="Boolean" Name="LastSyncSuccessful" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <NavigationProperty Name="CompanyItem" Relationship="modelEvolveCentralConsole.FK_ServiceCrmEvolutionItem_CompanyItem" FromRole="ServiceCrmEvolutionItem" ToRole="CompanyItem" />
+    <NavigationProperty Name="ServiceCrmEvolutionDetailHistoryItems" Relationship="modelEvolveCentralConsole.FK_ServiceCrmEvolutionDetailHistoryItem_ServiceCrmEvolutionItem" FromRole="ServiceCrmEvolutionItem" ToRole="ServiceCrmEvolutionDetailHistoryItem" />
+    <NavigationProperty Name="ServiceCrmEvolutionDetailItems" Relationship="modelEvolveCentralConsole.FK_ServiceCrmEvolutionDetailItem_ServiceCrmEvolutionItem" FromRole="ServiceCrmEvolutionItem" ToRole="ServiceCrmEvolutionDetailItem" />
+    <NavigationProperty Name="ServiceTemplateCrmEvolutionItem" Relationship="modelEvolveCentralConsole.FK_ServiceCrmEvolutionItem_ServiceTemplateCrmEvolutionItem" FromRole="ServiceCrmEvolutionItem" ToRole="ServiceTemplateCrmEvolutionItem" />
+  </EntityType>
+  <EntityType Name="ServiceTemplateCrmEvolutionDetailItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ServiceTemplateCrmEvolutionId" Nullable="false" />
+    <Property Type="String" Name="Code" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SourceTable" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DestinationTable" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CommandType" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Command" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Sequence" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Int32" Name="LastModifiedAdministratorAccountId" Nullable="false" />
+    <Property Type="DateTime" Name="ModifiedOn" Nullable="false" Precision="3" />
+    <NavigationProperty Name="ServiceTemplateCrmEvolutionItem" Relationship="modelEvolveCentralConsole.FK_ServiceTemplateCrmEvolutionDetailItem_ServiceTemplateCrmEvolutionItem" FromRole="ServiceTemplateCrmEvolutionDetailItem" ToRole="ServiceTemplateCrmEvolutionItem" />
+  </EntityType>
+  <EntityType Name="ServiceTemplateCrmEvolutionItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Code" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ServiceTypeId" Nullable="false" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <NavigationProperty Name="ServiceCrmEvolutionItems" Relationship="modelEvolveCentralConsole.FK_ServiceCrmEvolutionItem_ServiceTemplateCrmEvolutionItem" FromRole="ServiceTemplateCrmEvolutionItem" ToRole="ServiceCrmEvolutionItem" />
+    <NavigationProperty Name="ServiceTemplateCrmEvolutionDetailItems" Relationship="modelEvolveCentralConsole.FK_ServiceTemplateCrmEvolutionDetailItem_ServiceTemplateCrmEvolutionItem" FromRole="ServiceTemplateCrmEvolutionItem" ToRole="ServiceTemplateCrmEvolutionDetailItem" />
+    <NavigationProperty Name="ServiceTypeItem" Relationship="modelEvolveCentralConsole.FK_ServiceTemplateItem_ServiceTypeItem" FromRole="ServiceTemplateCrmEvolutionItem" ToRole="ServiceTypeItem" />
+  </EntityType>
+  <EntityType Name="ServiceTypeItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Code" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Decription" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ServiceTemplateCrmEvolutionItems" Relationship="modelEvolveCentralConsole.FK_ServiceTemplateItem_ServiceTypeItem" FromRole="ServiceTypeItem" ToRole="ServiceTemplateCrmEvolutionItem" />
+  </EntityType>
+  <EntityType Name="SyncLogCrmEvolutionDetailItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="SyncLogCrmEvolutionId" />
+    <Property Type="String" Name="ExecutedCommand" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsSuccessful" />
+    <Property Type="String" Name="ErrorMessage" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreateDate" Precision="3" />
+    <NavigationProperty Name="SyncLogCrmEvolutionItem" Relationship="modelEvolveCentralConsole.FK_LogDetailItem_LogItem" FromRole="SyncLogCrmEvolutionDetailItem" ToRole="SyncLogCrmEvolutionItem" />
+  </EntityType>
+  <EntityType Name="SyncLogCrmEvolutionItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ServiceCrmEvolutionId" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsSuccessful" Nullable="false" />
+    <NavigationProperty Name="SyncLogCrmEvolutionDetailItems" Relationship="modelEvolveCentralConsole.FK_LogDetailItem_LogItem" FromRole="SyncLogCrmEvolutionItem" ToRole="SyncLogCrmEvolutionDetailItem" />
+  </EntityType>
+  <Association Name="FK_AdministratorAccountItem_AdministratorRoleItem">
+    <End Type="modelEvolveCentralConsole.AdministratorRoleItem" Role="AdministratorRoleItem" Multiplicity="1" />
+    <End Type="modelEvolveCentralConsole.AdministratorAccountItem" Role="AdministratorAccountItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdministratorRoleItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AdministratorAccountItem">
+        <PropertyRef Name="AdministratorRoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ExceptionLogItem_AdministratorAccountItem1">
+    <End Type="modelEvolveCentralConsole.AdministratorAccountItem" Role="AdministratorAccountItem" Multiplicity="0..1" />
+    <End Type="modelEvolveCentralConsole.ApplicationLogItem" Role="ApplicationLogItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdministratorAccountItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ApplicationLogItem">
+        <PropertyRef Name="AdministratorAccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MemberAccountItem_CompanyItem">
+    <End Type="modelEvolveCentralConsole.CompanyItem" Role="CompanyItem" Multiplicity="0..1" />
+    <End Type="modelEvolveCentralConsole.MemberAccountItem" Role="MemberAccountItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MemberAccountItem">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServiceCrmEvolutionItem_CompanyItem">
+    <End Type="modelEvolveCentralConsole.CompanyItem" Role="CompanyItem" Multiplicity="1" />
+    <End Type="modelEvolveCentralConsole.ServiceCrmEvolutionItem" Role="ServiceCrmEvolutionItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ServiceCrmEvolutionItem">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServiceCrmEvolutionDetailHistoryItem_ServiceCrmEvolutionDetailItem">
+    <End Type="modelEvolveCentralConsole.ServiceCrmEvolutionDetailItem" Role="ServiceCrmEvolutionDetailItem" Multiplicity="1" />
+    <End Type="modelEvolveCentralConsole.ServiceCrmEvolutionDetailHistoryItem" Role="ServiceCrmEvolutionDetailHistoryItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceCrmEvolutionDetailItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ServiceCrmEvolutionDetailHistoryItem">
+        <PropertyRef Name="ServiceCrmEvolutionDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServiceCrmEvolutionDetailHistoryItem_ServiceCrmEvolutionItem">
+    <End Type="modelEvolveCentralConsole.ServiceCrmEvolutionItem" Role="ServiceCrmEvolutionItem" Multiplicity="1" />
+    <End Type="modelEvolveCentralConsole.ServiceCrmEvolutionDetailHistoryItem" Role="ServiceCrmEvolutionDetailHistoryItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceCrmEvolutionItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ServiceCrmEvolutionDetailHistoryItem">
+        <PropertyRef Name="ServiceCrmEvolutionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServiceCrmEvolutionDetailItem_ServiceCrmEvolutionItem">
+    <End Type="modelEvolveCentralConsole.ServiceCrmEvolutionItem" Role="ServiceCrmEvolutionItem" Multiplicity="0..1" />
+    <End Type="modelEvolveCentralConsole.ServiceCrmEvolutionDetailItem" Role="ServiceCrmEvolutionDetailItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceCrmEvolutionItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ServiceCrmEvolutionDetailItem">
+        <PropertyRef Name="ServiceCrmEvolutionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServiceCrmEvolutionItem_ServiceTemplateCrmEvolutionItem">
+    <End Type="modelEvolveCentralConsole.ServiceTemplateCrmEvolutionItem" Role="ServiceTemplateCrmEvolutionItem" Multiplicity="0..1" />
+    <End Type="modelEvolveCentralConsole.ServiceCrmEvolutionItem" Role="ServiceCrmEvolutionItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceTemplateCrmEvolutionItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ServiceCrmEvolutionItem">
+        <PropertyRef Name="ServiceTemplateCrmEvolutionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServiceTemplateCrmEvolutionDetailItem_ServiceTemplateCrmEvolutionItem">
+    <End Type="modelEvolveCentralConsole.ServiceTemplateCrmEvolutionItem" Role="ServiceTemplateCrmEvolutionItem" Multiplicity="1" />
+    <End Type="modelEvolveCentralConsole.ServiceTemplateCrmEvolutionDetailItem" Role="ServiceTemplateCrmEvolutionDetailItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceTemplateCrmEvolutionItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ServiceTemplateCrmEvolutionDetailItem">
+        <PropertyRef Name="ServiceTemplateCrmEvolutionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServiceTemplateItem_ServiceTypeItem">
+    <End Type="modelEvolveCentralConsole.ServiceTypeItem" Role="ServiceTypeItem" Multiplicity="1" />
+    <End Type="modelEvolveCentralConsole.ServiceTemplateCrmEvolutionItem" Role="ServiceTemplateCrmEvolutionItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceTypeItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ServiceTemplateCrmEvolutionItem">
+        <PropertyRef Name="ServiceTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LogDetailItem_LogItem">
+    <End Type="modelEvolveCentralConsole.SyncLogCrmEvolutionItem" Role="SyncLogCrmEvolutionItem" Multiplicity="0..1" />
+    <End Type="modelEvolveCentralConsole.SyncLogCrmEvolutionDetailItem" Role="SyncLogCrmEvolutionDetailItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SyncLogCrmEvolutionItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SyncLogCrmEvolutionDetailItem">
+        <PropertyRef Name="SyncLogCrmEvolutionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AdministratorRolePermissionItem">
+    <End Type="modelEvolveCentralConsole.AdministratorPermissionItem" Role="AdministratorPermissionItem" Multiplicity="*" />
+    <End Type="modelEvolveCentralConsole.AdministratorRoleItem" Role="AdministratorRoleItem" Multiplicity="*" />
+  </Association>
+</Schema>

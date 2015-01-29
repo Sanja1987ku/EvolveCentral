@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="modelEvolveCentralConsoleStoreContainer" CdmEntityContainer="entitiesEvolveCentralConsole">
+    <EntitySetMapping Name="AdministratorAccountItems">
+      <EntityTypeMapping TypeName="modelEvolveCentralConsole.AdministratorAccountItem">
+        <MappingFragment StoreEntitySet="AdministratorAccountItem">
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="LastLogonOn" ColumnName="LastLogonOn" />
+          <ScalarProperty Name="IsDeletable" ColumnName="IsDeletable" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="AdministratorRoleId" ColumnName="AdministratorRoleId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdministratorPermissionItems">
+      <EntityTypeMapping TypeName="modelEvolveCentralConsole.AdministratorPermissionItem">
+        <MappingFragment StoreEntitySet="AdministratorPermissionItem">
+          <ScalarProperty Name="IsSelectable" ColumnName="IsSelectable" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdministratorRoleItems">
+      <EntityTypeMapping TypeName="modelEvolveCentralConsole.AdministratorRoleItem">
+        <MappingFragment StoreEntitySet="AdministratorRoleItem">
+          <ScalarProperty Name="IsDeletable" ColumnName="IsDeletable" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ApplicationLogItems">
+      <EntityTypeMapping TypeName="modelEvolveCentralConsole.ApplicationLogItem">
+        <MappingFragment StoreEntitySet="ApplicationLogItem">
+          <ScalarProperty Name="AdministratorAccountId" ColumnName="AdministratorAccountId" />
+          <ScalarProperty Name="MemberAccountId" ColumnName="MemberAccountId" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ApplicationSettingsItems">
+      <EntityTypeMapping TypeName="modelEvolveCentralConsole.ApplicationSettingsItem">
+        <MappingFragment StoreEntitySet="ApplicationSettingsItem">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Group" ColumnName="Group" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompanyItems">
+      <EntityTypeMapping TypeName="modelEvolveCentralConsole.CompanyItem">
+        <MappingFragment StoreEntitySet="CompanyItem">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MemberAccountItems">
+      <EntityTypeMapping TypeName="modelEvolveCentralConsole.MemberAccountItem">
+        <MappingFragment StoreEntitySet="MemberAccountItem">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastLogonOn" ColumnName="LastLogonOn" />
+          <ScalarProperty Name="RegisteredOn" ColumnName="RegisteredOn" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceCrmEvolutionDetailHistoryItems">
+      <EntityTypeMapping TypeName="modelEvolveCentralConsole.ServiceCrmEvolutionDetailHistoryItem">
+        <MappingFragment StoreEntitySet="ServiceCrmEvolutionDetailHistoryItem">
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="LastModifiedAdministratorAccountId" ColumnName="LastModifiedAdministratorAccountId" />
+          <ScalarProperty Name="LastModifiedMemberAccountId" ColumnName="LastModifiedMemberAccountId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsUnique" ColumnName="IsUnique" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Command" ColumnName="Command" />
+          <ScalarProperty Name="CommandType" ColumnName="CommandType" />
+          <ScalarProperty Name="DestinationTable" ColumnName="DestinationTable" />
+          <ScalarProperty Name="SourceTable" ColumnName="SourceTable" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ServiceCrmEvolutionId" ColumnName="ServiceCrmEvolutionId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ServiceCrmEvolutionDetailId" ColumnName="ServiceCrmEvolutionDetailId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceCrmEvolutionDetailItems">
+      <EntityTypeMapping TypeName="modelEvolveCentralConsole.ServiceCrmEvolutionDetailItem">
+        <MappingFragment StoreEntitySet="ServiceCrmEvolutionDetailItem">
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="LastModifiedAdministratorAccountId" ColumnName="LastModifiedAdministratorAccountId" />
+          <ScalarProperty Name="LastModifiedMemberAccountId" ColumnName="LastModifiedMemberAccountId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsUnique" ColumnName="IsUnique" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Command" ColumnName="Command" />
+          <ScalarProperty Name="CommandType" ColumnName="CommandType" />
+          <ScalarProperty Name="DestinationTable" ColumnName="DestinationTable" />
+          <ScalarProperty Name="SourceTable" ColumnName="SourceTable" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ServiceCrmEvolutionId" ColumnName="ServiceCrmEvolutionId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceCrmEvolutionItems">
+      <EntityTypeMapping TypeName="modelEvolveCentralConsole.ServiceCrmEvolutionItem">
+        <MappingFragment StoreEntitySet="ServiceCrmEvolutionItem">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastSyncSuccessful" ColumnName="LastSyncSuccessful" />
+          <ScalarProperty Name="LastSyncDate" ColumnName="LastSyncDate" />
+          <ScalarProperty Name="DatabaseName_Destination" ColumnName="DatabaseName_Destination" />
+          <ScalarProperty Name="DatabaseName_Source" ColumnName="DatabaseName_Source" />
+          <ScalarProperty Name="Connection_DatabasePassword" ColumnName="Connection_DatabasePassword" />
+          <ScalarProperty Name="Connection_DatabaseUserName" ColumnName="Connection_DatabaseUserName" />
+          <ScalarProperty Name="Connection_DatabaseServer" ColumnName="Connection_DatabaseServer" />
+          <ScalarProperty Name="Connection_DatabaseName" ColumnName="Connection_DatabaseName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ServiceTemplateCrmEvolutionId" ColumnName="ServiceTemplateCrmEvolutionId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceTemplateCrmEvolutionDetailItems">
+      <EntityTypeMapping TypeName="modelEvolveCentralConsole.ServiceTemplateCrmEvolutionDetailItem">
+        <MappingFragment StoreEntitySet="ServiceTemplateCrmEvolutionDetailItem">
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="LastModifiedAdministratorAccountId" ColumnName="LastModifiedAdministratorAccountId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Command" ColumnName="Command" />
+          <ScalarProperty Name="CommandType" ColumnName="CommandType" />
+          <ScalarProperty Name="DestinationTable" ColumnName="DestinationTable" />
+          <ScalarProperty Name="SourceTable" ColumnName="SourceTable" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ServiceTemplateCrmEvolutionId" ColumnName="ServiceTemplateCrmEvolutionId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceTemplateCrmEvolutionItems">
+      <EntityTypeMapping TypeName="modelEvolveCentralConsole.ServiceTemplateCrmEvolutionItem">
+        <MappingFragment StoreEntitySet="ServiceTemplateCrmEvolutionItem">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ServiceTypeId" ColumnName="ServiceTypeId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceTypeItems">
+      <EntityTypeMapping TypeName="modelEvolveCentralConsole.ServiceTypeItem">
+        <MappingFragment StoreEntitySet="ServiceTypeItem">
+          <ScalarProperty Name="Decription" ColumnName="Decription" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SyncLogCrmEvolutionDetailItems">
+      <EntityTypeMapping TypeName="modelEvolveCentralConsole.SyncLogCrmEvolutionDetailItem">
+        <MappingFragment StoreEntitySet="SyncLogCrmEvolutionDetailItem">
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+          <ScalarProperty Name="IsSuccessful" ColumnName="IsSuccessful" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ExecutedCommand" ColumnName="ExecutedCommand" />
+          <ScalarProperty Name="SyncLogCrmEvolutionId" ColumnName="SyncLogCrmEvolutionId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SyncLogCrmEvolutionItems">
+      <EntityTypeMapping TypeName="modelEvolveCentralConsole.SyncLogCrmEvolutionItem">
+        <MappingFragment StoreEntitySet="SyncLogCrmEvolutionItem">
+          <ScalarProperty Name="IsSuccessful" ColumnName="IsSuccessful" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ServiceCrmEvolutionId" ColumnName="ServiceCrmEvolutionId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AdministratorRolePermissionItem" TypeName="modelEvolveCentralConsole.AdministratorRolePermissionItem" StoreEntitySet="AdministratorRolePermissionItem">
+      <EndProperty Name="AdministratorRoleItem">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="AdministratorPermissionItem">
+        <ScalarProperty Name="Id" ColumnName="PermissionId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

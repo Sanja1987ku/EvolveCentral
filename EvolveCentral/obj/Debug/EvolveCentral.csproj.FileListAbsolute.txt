@@ -1,0 +1,10 @@
+D:\Jobs\Elance\John North\Source\Evolve Central\Source\EvolveCentral\EvolveCentral\bin\EvolveCentral.dll
+D:\Jobs\Elance\John North\Source\Evolve Central\Source\EvolveCentral\EvolveCentral\bin\EvolveCentral.pdb
+D:\Jobs\Elance\John North\Source\Evolve Central\Source\EvolveCentral\EvolveCentral\bin\EntityFramework.dll
+D:\Jobs\Elance\John North\Source\Evolve Central\Source\EvolveCentral\EvolveCentral\bin\Telerik.Web.UI.dll
+D:\Jobs\Elance\John North\Source\Evolve Central\Source\EvolveCentral\EvolveCentral\bin\Telerik.Web.UI.Skins.dll
+D:\Jobs\Elance\John North\Source\Evolve Central\Source\EvolveCentral\EvolveCentral\bin\EntityFramework.xml
+D:\Jobs\Elance\John North\Source\Evolve Central\Source\EvolveCentral\EvolveCentral\bin\Telerik.Web.UI.xml
+D:\Jobs\Elance\John North\Source\Evolve Central\Source\EvolveCentral\EvolveCentral\obj\Debug\EvolveCentral.dll
+D:\Jobs\Elance\John North\Source\Evolve Central\Source\EvolveCentral\EvolveCentral\obj\Debug\EvolveCentral.pdb
+D:\Jobs\Elance\John North\Source\Evolve Central\Source\EvolveCentral\EvolveCentral\obj\Debug\EvolveCentral.csprojResolveAssemblyReference.cache
